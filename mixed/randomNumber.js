@@ -6,3 +6,12 @@ function getRandonNumber(){
 
 let randonNum = getRandonNumber();
 console.log(randonNum);
+
+
+//Random numbers between min and max (including both)
+
+function getRandom(min, max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+console.log(getRandom(10, 20))
