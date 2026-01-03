@@ -10,3 +10,12 @@ for (let idx in arr) {
 }
 
 console.log(arr);
+
+// Another method
+
+for (let idx in arr) {
+  let randomIndex = Math.floor(Math.random() * arr.length);
+  [arr[randomIndex], arr[idx]] = [arr[idx], arr[randomIndex]]
+}
+
+console.log(arr)
