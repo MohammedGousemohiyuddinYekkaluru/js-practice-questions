@@ -9,3 +9,13 @@ function checkArray(arr) {
 let isAllNumbers = checkArray(arr);
 console.log(isAllNumbers)
 
+// OR
+
+function checkArray2(arr) {
+    const filtered = arr.filter(elem => typeof elem === "number");
+    return filtered.length === arr.length;
+}
+
+let isAllNumbers2 = checkArray(arr);
+console.log(isAllNumbers2)
+
