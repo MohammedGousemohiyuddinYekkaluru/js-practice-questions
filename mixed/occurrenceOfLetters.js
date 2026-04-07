@@ -13,3 +13,14 @@ function occurenceOfLetters(str) {
 }
 
 console.log(occurenceOfLetters("javascript"))
+
+// Another Method
+
+function occurenceOfLetters2(str) {
+    return str.split("").reduce((acc, char) => {
+        acc[char] = (acc[char] || 0) + 1;
+        return acc;
+    }, {});
+}
+
+console.log(occurenceOfLetters2("javascript"));
