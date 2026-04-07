@@ -15,3 +15,16 @@ function usersAboveAge(users){
 }
 
 console.log(usersAboveAge(users))
+
+//Another Method
+
+function usersAboveAge2(users) {
+  return users.reduce((acc, user) => {
+    if (user.age > 18) {
+      acc.push(user.name);
+    }
+    return acc;
+  }, []);
+}
+
+console.log(usersAboveAge2(users));
