@@ -7,3 +7,12 @@ function getArrayElement(arr, n) {
 }
 
 console.log(getArrayElement([23, 55, "apple", "mango"], 4))
+
+// Another Method
+
+const getFirstElements = (arr, n = 1) => {
+  return n === 1 ? arr[0] : arr.slice(0, n);
+};
+
+console.log(getFirstElements([23, 55, "apple", "mango"], 1)); 
+console.log(getFirstElements([23, 55, "apple", "mango"], 3));
