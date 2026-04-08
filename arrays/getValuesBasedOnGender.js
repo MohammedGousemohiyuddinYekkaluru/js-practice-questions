@@ -21,3 +21,16 @@ function getValuesBasedOnGender(arr) {
 }
 
 console.log(getValuesBasedOnGender(arrOfObj))
+
+// Another Method
+
+function getValuesBasedOnGender2(arr) {
+  return arr.reduce((accumulator, currentObj) => {
+    if (currentObj.gender === "male") {
+      accumulator.push(currentObj);
+    }
+    return accumulator;
+  }, []);
+}
+
+console.log(getValuesBasedOnGender2(arrOfObj));
